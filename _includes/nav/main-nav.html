@@ -1,0 +1,14 @@
+<nav>
+  {% assign pages_list = site.pages | sort:'order' %}
+  {% for my_page in pages_list %}
+    {% if my_page.title %}
+      {% if my_page.url == page.url %}
+        <a class="active" title="{{ my_page.title }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}
+        </a>
+      {% else %}
+        <a title="{{ my_page.title }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}
+        </a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</nav>

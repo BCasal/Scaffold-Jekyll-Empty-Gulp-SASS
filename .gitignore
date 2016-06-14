@@ -1,0 +1,17 @@
+
+
+# https://github.com/github/gitignore
+
+# GNU/Linux
+.*
+!.gitignore
+!.editorconfig
+!.htaccess
+*~
+
+# Jekyll
+_site
+.jekyll-metadata
+
+# NodeJS/Gulp
+node_modules
